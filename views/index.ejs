@@ -6,6 +6,15 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p>Voici la <%= title %> de Marcin Gutmanski.</p>
+    <form action ="/books/list" method = post>
+    <p>Choisissez une catégorie :</p>
+    <select name="categories" id = "categories">
+      <option value="Roman historique">Roman historique</option>
+      <option value="Fantaisie">Fantaisie</option>
+      <option value="Autobiographie">Autobiographie</option>
+    </select>
+    <button type="submit">Rechercher</button>
+    </form>
   </body>
 </html>

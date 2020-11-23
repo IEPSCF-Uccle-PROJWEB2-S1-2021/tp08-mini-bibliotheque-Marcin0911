@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= message %></h1>
+  <table>
+    <tr>
+      <th>Auteur</th>
+      <th>Titre</th>
+    </tr>
+  <% for (var i = 0; i < longueur;  i++ ) { %>
+    <tr>
+      <td><%= newTab[i].author %></td>
+      <td><%= newTab[i].title %></td>
+    </tr>
+  <% } %>
+  </table>
+  </br>
+  <a href="/">Retournez vers la sélection de la catégorie.</a>
+</body>
+</html>

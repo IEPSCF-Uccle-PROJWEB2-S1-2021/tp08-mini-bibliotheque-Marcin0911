@@ -1,0 +1,29 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="shortcut icon" href="")
+  body
+    h1= message
+  - var n = 0;
+  table
+    tr
+      th Author
+      th Title
+  while n < longueur
+    tr
+      td= newTab[n].author
+      td= newTab[n].title
+      n= n++
+
+  br
+
+a(href="/") Revenez à la sélection de catégorie.
+
+
+
+
+
+
+
+
